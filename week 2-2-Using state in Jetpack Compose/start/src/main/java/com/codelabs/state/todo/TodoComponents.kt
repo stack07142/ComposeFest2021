@@ -81,8 +81,8 @@ fun AnimatedIconRow(
 ) {
     // remember these specs so they don't restart if recomposing during the animation
     // this is required since TweenSpec restarts on interruption
-    val enter = remember { fadeIn(animationSpec = TweenSpec(300, easing = FastOutLinearInEasing)) }
-    val exit = remember { fadeOut(animationSpec = TweenSpec(100, easing = FastOutSlowInEasing)) }
+    val enter = remember { fadeIn(animationSpec = TweenSpec(3000, easing = FastOutLinearInEasing)) }
+    val exit = remember { fadeOut(animationSpec = TweenSpec(1000, easing = FastOutSlowInEasing)) }
     Box(modifier.defaultMinSize(minHeight = 16.dp)) {
         AnimatedVisibility(
             visible = visible,
